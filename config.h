@@ -12,16 +12,16 @@ static unsigned int lines      = 0;
 static const char worddelimiters[] = " ";
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"JetBrainsMono Nerd Font Mono:size=13"
+	"JetBrainsMono Nerd Font Mono:size=12"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] =          { col_strong, "#1c1c1c"     },
-	[SchemeSel] =           { "#bbbbbb", col_highlight  },
-	[SchemeSelHighlight] =  { "#eeeeee", col_highlight  },
-	[SchemeNormHighlight] = { "#bbbbbb", "#1c1c1c"      },
-	[SchemeOut] =           { "#000000", "#00ffff"      },
-	[SchemeInput] =         { "#bbbbbb", "#1c1c1c"      },
+	[SchemeNorm] =          { col_highlight,    "#1c1c1c"      },
+	[SchemeSel] =           { "#bbbbbb",        col_highlight  },
+	[SchemeSelHighlight] =  { "#eeeeee",        col_highlight  },
+	[SchemeNormHighlight] = { "#bbbbbb",        "#1c1c1c"      },
+	[SchemeOut] =           { "#000000",        "#00ffff"      },
+	[SchemeInput] =         { "#bbbbbb",        "#1c1c1c"      },
 };
